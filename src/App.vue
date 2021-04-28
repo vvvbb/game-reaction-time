@@ -39,18 +39,18 @@ export default {
 
 <style lang="scss">
 body {
-  background-color: #e4e4e4;
+  background-color: #4f0716;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #444;
+  color: #e83d09;
   margin-top: 60px;
 }
 
-button{
+button {
   background-color: crimson;
   color: white;
   border: none;
@@ -61,7 +61,7 @@ button{
   cursor: pointer;
   margin: 10px;
 }
-button[disabled]{
+button[disabled] {
   opacity: 0.2;
   cursor: not-allowed;
 }

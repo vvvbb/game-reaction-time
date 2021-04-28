@@ -13,7 +13,7 @@ export default {
     };
   },
   mounted() {
-    console.log("component mounted");
+    // console.log("component mounted");
     setTimeout(() => {
       this.showBlock = true;
       // console.log(this.delay)
@@ -28,8 +28,8 @@ export default {
     },
     stopTimer() {
       clearInterval(this.timer);
-    //   console.log(this.reactionTime);
-    this.$emit('end',this.reactionTime) //emit second parameter to parent
+      //   console.log(this.reactionTime);
+      this.$emit("end", this.reactionTime); //emit second parameter to parent
     },
   },
 };
@@ -37,14 +37,26 @@ export default {
 
 <style>
 .block {
-    font-weight : bold;
-    font-size: 2rem;
-  width: 400px;
-  border-radius: 20px;
-  background: crimson;
-  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  width: 80%;
+  height: 60%;
+  margin: auto;
+  border-radius: 2rem;
+
+  font-size: 2rem;
+  font-weight: bold;
   text-align: center;
-  padding: 100px 0;
-  margin: 40px auto;
+  text-transform: uppercase;
+
+  color: white;
+  background: hsl(130, 83%, 67%);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 </style>
